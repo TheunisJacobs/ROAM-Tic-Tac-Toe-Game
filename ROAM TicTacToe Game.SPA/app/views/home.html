@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="jumbotron">
+        
+
+
+        <div class="" ng-if="isLoggedIn">
+            <a type="button" class="btn btn-primary" href="#/games">Games</a>
+            <a type="button" class="btn btn-primary" href="#/games/add">Create New</a>
+        </div>
+
+        <div class="" ng-hide="isLoggedIn">
+            <a type="button" class="btn btn-primary" href="#/login">Login</a>
+            <a type="button" class="btn btn-primary" href="#/register">Register</a>
+        </div>
+
+    </div>
+</div>

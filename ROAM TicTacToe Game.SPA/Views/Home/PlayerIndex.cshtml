@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Add Player";
+}
+<h3>@ViewData["Title"]</h3>
+<h3>@ViewData["Message"]</h3>
+
+@{
+    ViewData["Title"] = "Add Player";
+}
+<h3>@ViewData["Title"]</h3>
+<h3>@ViewData["Message"]</h3>
+
+<div id="view">
+    <form>
+        <div class="form-group">
+            <label for="FirstName">First Name</label>
+            <input type="text" class="form-control"
+                   id="firstName" name="firstName"
+                   v-model="firstName" placeholder="firstName ">
+        </div>
+        <div class="form-group">
+            <label for="LastName">Last Name</label>
+            <input type="text" class="form-control"
+                   id="lastName" name="lastName"
+                   v-model="lastName" placeholder="Last Name">
+        </div>
+       
+        <button v-on:click="addPlayer">Add Player</button>
+    </form>
+</div>
+
+<script src="~/js/PlayerIndex.bundle.js"></script>
